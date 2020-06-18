@@ -2,6 +2,13 @@
     global $post_removed;
     global $category_single;
 
+    $filters = array(
+        'post_feature' => [2,3,4],
+        'articles_home' => [5],
+        'box_article' => [1,2,3,4],
+        
+    );
+
     $post_removed = array();
     $weekday = array(
         'Domingo',
