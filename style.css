@@ -1,0 +1,40 @@
+/*
+Theme Name: Natrilha
+Author: Danilo Pastor e Time Natrilha
+Author URI: https://nativamultimidia.com.br/
+Description: Tema exclusivo site natrilha
+Text Domain: natrilha
+*/
+:root {
+    --roxo : rgba(65, 48, 142, 1);
+    --roxo-aplha-07 : rgba(65, 48, 142, 0.7);
+    --laranja: rgba(255, 114, 36, 1);
+    --slaranja: rgb(241, 86, 0);
+    --cinza: rgb(154, 154, 154);
+    --pcinza: rgb(68, 68, 68);
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, input:focus{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+.share-buttons li.facebook a{
+    background: #3b5998!important;
+}
+.share-buttons li.twitter a{
+    background: #1dcaff!important;
+}
+.share-buttons li.whatsapp a{
+    background: #12af0a!important;
+}
+.share-buttons li.telegram a{
+    background: #00aced!important;
+}
+.share-buttons li.googleplus a{
+    background: #dd4b39!important;
+}
+.share-buttons li.linkedin a{
+    background: #0b66c1!important;
+}
