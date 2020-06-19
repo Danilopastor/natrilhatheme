@@ -20,7 +20,7 @@
         'Sábado'
     );
     $color_category = array(
-        3 => ['bg-color' => "#440063", 'bg-image' => 'http://localhost/natrilhawp/wp-content/themes/natrilha/assets/image/bg-cat/natilha.jpg']
+        59 => ['bg-color' => "#440063", 'bg-image' => 'http://localhost/natrilhawp/wp-content/themes/natrilha/assets/image/bg-cat/natilha.jpg']
     );
 
     function natrilha_wp_scripts(){
