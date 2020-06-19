@@ -3,10 +3,10 @@
     global $category_single;
 
     $filters = array(
-        'post_feature' => [2,3,4],
-        'articles_home' => [5],
-        'box_article' => [1,2,3,4],
-        
+        'post_feature' => [59,5,57],
+        'articles_home' => [6],
+        'box_article' => [179,58,59,5],
+
     );
 
     $post_removed = array();
