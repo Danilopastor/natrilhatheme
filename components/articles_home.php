@@ -10,6 +10,7 @@
 	$this_post = array();
 	$countpost = 1;
 	$categories = '';
+	if($post_feature_box_1) :
 	foreach( $post_feature_box_1 as $post ) :  setup_postdata($post);
 		if($countpost <= 1 ){
 			$categories = get_the_terms($post->ID,'category');
@@ -20,6 +21,7 @@
 		$post_removed[] = $post->ID;
 		$countpost++;
 	endforeach; wp_reset_postdata();
+     
 ?>
 <!-- //articles-home -->
 <div class="taxonomy-article">
@@ -58,3 +60,4 @@
 			</div>
 	</div><!-- row-mid-1 -->
 </div>
+<?php endif; ?>
