@@ -22,13 +22,15 @@ if($instancia['tab01'] != 'null' || $instancia['tab02'] != 'null') :
                     if($tab_widget_01) :
                     foreach( $tab_widget_01 as $post ) :  setup_postdata($post);
             ?>
-    		<div class="row item-tab">
-                <div class="col-md-4 col-sm-5 thumb"><i class="fas fa-play animation"></i><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
-                <div class="col-md-8 col-sm-7 content-item">
-                    <h1><?php echo get_the_title($post->ID); ?></h1>
-                    <p><?php echo natrilha_excerpt(get_the_excerpt($post->ID),10); ?></p>
-            </div>
-    		</div><!-- item-tab -->
+            <a href="<?php echo get_the_permalink($post->ID); ?>">
+                <div class="row item-tab">
+                    <div class="col-md-4 col-sm-5 thumb"><i class="fas fa-play animation"></i><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
+                    <div class="col-md-8 col-sm-7 content-item">
+                        <h1><?php echo get_the_title($post->ID); ?></h1>
+                        <p><?php echo natrilha_excerpt(get_the_excerpt($post->ID),10); ?></p>
+                </div>
+                </div><!-- item-tab -->
+            </a>
             <?php endforeach; wp_reset_postdata(); else : ?>
                 <div class="tab-content-empty">
                     <h1><i class="fab fa-ello"></i></h1>
@@ -49,13 +51,15 @@ if($instancia['tab01'] != 'null' || $instancia['tab02'] != 'null') :
                     if($tab_widget_02) :
                     foreach( $tab_widget_02 as $post ) :  setup_postdata($post);
             ?>
-    		<div class="row item-tab">
-                <div class="col-md-4 col-sm-5 thumb"><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
-                <div class="col-md-8 col-sm-7 content-item">
-                    <h1><?php echo get_the_title($post->ID); ?></h1>
-                    <p><?php echo natrilha_excerpt(get_the_excerpt($post->ID),10); ?></p>
-            </div>
-    		</div><!-- item-tab -->
+            <a href="<?php echo get_the_permalink($post->ID); ?>">
+                <div class="row item-tab">
+                    <div class="col-md-4 col-sm-5 thumb"><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
+                    <div class="col-md-8 col-sm-7 content-item">
+                        <h1><?php echo get_the_title($post->ID); ?></h1>
+                        <p><?php echo natrilha_excerpt(get_the_excerpt($post->ID),10); ?></p>
+                </div>
+                </div><!-- item-tab -->
+            </a>
             <?php endforeach; wp_reset_postdata(); else : ?>
                 <div class="tab-content-empty">
                     <h1><i class="fab fa-ello"></i></h1>

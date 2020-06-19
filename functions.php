@@ -3,7 +3,7 @@
     global $category_single;
 
     $filters = array(
-        'post_feature' => [59,5,57],
+        'post_feature' => [179,5,57],
         'articles_home' => [6],
         'box_article' => [179,58,59,5],
 

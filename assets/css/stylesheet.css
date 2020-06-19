@@ -572,7 +572,7 @@ a:hover{
 	}
 	.wrapper .mid-section .colums-aticles-home .article-home .article-row .row-small-1 .inner .box-post-thumb{
 		overflow: hidden;
-		height: 550px;
+		max-height: 550px;
 		margin-bottom: 15px;
 		position: relative;
 	}
@@ -830,7 +830,7 @@ a:hover{
 			margin-top: 10px;
 		}
 		.page-archive .article-home .article-row .row-small-1 .inner .box-article-thumb{
-			height: 250px;
+			max-height: 250px;
 		}
 		.box-format-blog .item-post .box-article-thumb{
 			height: 250px;

@@ -35,7 +35,7 @@
                         <?php natrilha_component('tags'); ?>
                     </div>
                     <div class="col-md-9 the-post-content">
-                        <?php echo get_the_content(); ?>
+                        <?php echo the_content(); ?>
                     </div>
                 </div>
 			</div><!-- inner -->
