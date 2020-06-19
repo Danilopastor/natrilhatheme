@@ -48,7 +48,7 @@ global $weekday;
 									<ul class="clearfix">
 										<li class="animation"><?php echo $categories[0]->name; ?></li>
 									</ul>
-									<h1><span class="titulo-podcast">NaTrilha #50</span> <?php echo get_the_title($post->ID); ?></h1>
+									<h1><span class="titulo-podcast"></span> <?php echo get_the_title($post->ID); ?></h1>
 									<p><?php echo $weekday[date('w', strtotime(get_the_date('Y-m-d',$post->ID)))] .', '. get_the_date('',$post->ID); ?> - <?php echo get_the_author($post->ID) ?></p>
 								</div>
 							</div>
