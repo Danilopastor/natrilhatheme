@@ -22,7 +22,7 @@
 	$cat_nums = count($categories);
 ?>
 <!-- //box-article -->
-<div class="col-md-3 clearfix">
+<div class="col-md-3 col-sm-12 clearfix item-small">
     <a href="<?php echo get_the_permalink($post->ID); ?>">
     <div class="inner">
         <div class="taxonomy-mid-article animation"><?php echo $categories[array_rand($categories,1)]->name;?></div>

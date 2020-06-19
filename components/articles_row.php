@@ -1,6 +1,6 @@
 <!-- //articles-row -->
 <?php global $filters; ?>
-<div class="row article-row">
+<div class="row article-row section-small">
     <div class="col-md-12 row-mid-1">
         <div class="row">
 

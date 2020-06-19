@@ -15,7 +15,7 @@
         $post_removed[] = $post->ID;
         $categories = get_the_terms($post->ID,'category');
         ?>
-		<div class="col-md-3 row-small-1 clearfix">
+		<div class="col-md-3 col-sm-12 row-small-1 clearfix">
 			<a href="<?php echo get_the_permalink($post->ID); ?>">
 			<div class="inner">
 				<div class="box-article-thumb"> <img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>

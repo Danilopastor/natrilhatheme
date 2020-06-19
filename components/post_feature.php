@@ -4,7 +4,7 @@ global $weekday;
 ?>
 <!-- //post-feature -->
 <div class="row">
-					<div class="col-md-3 item">
+					<div class="col-md-3 col-sd-12 item">
 						<?php
 							$post_feature_box_1 = get_posts([
 								'numberposts' => 1,
@@ -29,7 +29,7 @@ global $weekday;
 						</a>
 					    <?php endforeach; wp_reset_postdata(); ?>
 				    </div>
-					<div class="col-md-6 item">
+					<div class="col-md-6 col-sd-12 item">
 					    <?php
 							$post_feature_box_2 = get_posts([
 								'numberposts' => 1,
@@ -55,7 +55,7 @@ global $weekday;
 						</a>
 						<?php endforeach; wp_reset_postdata(); ?>
 					</div>
-					<div class="col-md-3 item">
+					<div class="col-md-3 col-sd-12 item r-item">
 					<?php
 							$post_feature_box_3 = get_posts([
 								'numberposts' => 2,
@@ -76,6 +76,10 @@ global $weekday;
 									</ul>
 									<h1><?php echo get_the_title($post->ID); ?></h1>
 								</div>
+						</div>
+						<div class="information-post information-mobile">
+							<h1><?php echo get_the_title($post->ID); ?></h1>
+							<p><?php echo natrilha_excerpt(get_the_excerpt($post->ID),15); ?></p>
 						</div>
 					</a>
 					<?php endforeach; wp_reset_postdata(); ?>

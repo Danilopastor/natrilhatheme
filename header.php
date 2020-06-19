@@ -39,5 +39,4 @@
 					<div class="icon-search"></div>
 				</div>
 			</div>
-			
 	</div>

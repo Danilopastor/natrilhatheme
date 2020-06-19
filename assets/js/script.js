@@ -28,4 +28,11 @@ jQuery(document).ready(function($) {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
       });
 
+      const togglemenu = $('#toogle-menu');
+      const mobilemenu = $('.mobile-menu');
+
+      togglemenu.on('click',function(){
+        mobilemenu.toggleClass('menu-show');
+      })
+
 });

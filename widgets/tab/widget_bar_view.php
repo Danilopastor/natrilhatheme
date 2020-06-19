@@ -23,8 +23,8 @@ if($instancia['tab01'] != 'null' || $instancia['tab02'] != 'null') :
                     foreach( $tab_widget_01 as $post ) :  setup_postdata($post);
             ?>
     		<div class="row item-tab">
-                <div class="col-md-4 thumb"><i class="fas fa-play animation"></i><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
-                <div class="col-md-8 content-item">
+                <div class="col-md-4 col-sm-5 thumb"><i class="fas fa-play animation"></i><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
+                <div class="col-md-8 col-sm-7 content-item">
                     <h1><?php echo get_the_title($post->ID); ?></h1>
                     <p><?php echo natrilha_excerpt(get_the_excerpt($post->ID),10); ?></p>
             </div>
@@ -50,8 +50,8 @@ if($instancia['tab01'] != 'null' || $instancia['tab02'] != 'null') :
                     foreach( $tab_widget_02 as $post ) :  setup_postdata($post);
             ?>
     		<div class="row item-tab">
-                <div class="col-md-4 thumb"><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
-                <div class="col-md-8 content-item">
+                <div class="col-md-4 col-sm-5 thumb"><img class="animation" src="<?php echo getImagePost($post->ID) ?>" alt="<?php echo get_the_title($post->ID); ?>"/></div>
+                <div class="col-md-8 col-sm-7 content-item">
                     <h1><?php echo get_the_title($post->ID); ?></h1>
                     <p><?php echo natrilha_excerpt(get_the_excerpt($post->ID),10); ?></p>
             </div>
