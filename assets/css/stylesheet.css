@@ -110,8 +110,8 @@ a:hover{
 		/*border-top: 1px solid #dcdcdc;
 		border-bottom: 1px solid #dcdcdc;*/
 	}
-	.wrapper .header .mobile-menu{
-		display:none
+	.mobile-menu{
+		display:none;
 	}
 	.wrapper .header .header-menu .inner-menu ul{	
 		width: max-content;
