@@ -32,6 +32,7 @@
         wp_enqueue_style('style_css', get_stylesheet_uri());
         wp_enqueue_style('bootstrap_css', get_stylesheet_directory_uri().'/assets/css/bootstrap.css');
         wp_enqueue_style('stylesheet_css', get_stylesheet_directory_uri().'/assets/css/stylesheet.css');
+        wp_enqueue_style('initial_css', get_stylesheet_directory_uri().'/assets/css/initial_style.css?version='.rand(1500,6000));
         
 
         wp_enqueue_script( 'bootstrap_bundle_js', get_template_directory_uri().'/assets/js/bootstrap.bundle.min.js', array('jquery'), '',true );

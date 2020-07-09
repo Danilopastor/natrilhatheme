@@ -8,6 +8,7 @@ Text Domain: natrilha
 :root {
     --roxo : rgba(65, 48, 142, 1);
     --roxo-aplha-07 : rgba(65, 48, 142, 0.7);
+    --roxo-aplha-08 : rgba(65, 48, 142, 0.8);
     --laranja: rgba(255, 114, 36, 1);
     --slaranja: rgb(241, 86, 0);
     --cinza: rgb(154, 154, 154);

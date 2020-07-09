@@ -1,6 +1,8 @@
 <?php
 get_header();
 global $filters;
+
+if(isset($_COOKIE['natrilha_initial'])){
 ?>
 		<div class="mid-section animation">
 			<div class="container feature-home">
@@ -20,4 +22,7 @@ global $filters;
 			</div>
 		</div>
     </div>
+<?php }else{
+	natrilha_component('initial_page');
+} ?>
 <?php get_footer(); ?>
