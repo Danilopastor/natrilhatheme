@@ -1,13 +1,7 @@
 <?php
     global $post_removed;
     global $category_single;
-
-    $filters = array(
-        'post_feature' => [179,5,57],
-        'articles_home' => [6],
-        'box_article' => [179,58,59,5],
-
-    );
+    $natrilha_theme_option = get_option( 'natrilha_opcoes' );
 
     $post_removed = array();
     $weekday = array(
@@ -146,3 +140,32 @@
         $compentdir = __DIR__."/components";
         return require($compentdir.'/'.$file.'.php');
     }
+
+    function natrilha_chk ( $array, $key ) {
+        if ( isset( $array[$key] ) ) {
+            return $array[$key];
+        } else {
+            return false;
+        }
+    }
+
+
+    $filters = array(
+        'post_feature' => [
+            natrilha_chk($natrilha_theme_option,'feature-1'),
+            natrilha_chk($natrilha_theme_option,'feature-2'),
+            natrilha_chk($natrilha_theme_option,'feature-3'),
+            natrilha_chk($natrilha_theme_option,'feature-4'),
+            natrilha_chk($natrilha_theme_option,'feature-5')
+        ],
+        'articles_home' => [natrilha_chk($natrilha_theme_option,'articles_home')],
+        'box_article' => [
+            natrilha_chk($natrilha_theme_option,'box-article-1'),
+            natrilha_chk($natrilha_theme_option,'box-article-2'),
+            natrilha_chk($natrilha_theme_option,'box-article-3'),
+            natrilha_chk($natrilha_theme_option,'box-article-4')
+        ],
+
+    );
+
+    load_template( get_template_directory() . '/theme_option/theme_option.php' );
